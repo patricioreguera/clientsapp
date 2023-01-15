@@ -1,7 +1,7 @@
 {
-  "homepage": "https://patricioreguera.github.io/clientsapp/",
   "name": "clientsapp",
-  "private": false,
+  "homepage": "https://patricioreguera.github.io/clientsapp/",
+  "private": "true",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
