@@ -12,8 +12,7 @@ function App() {
 	return (
 		<div className="App text-center">
 			<Header />
-			<div className="p-5">
-				<Filter />
+			<div className="container">
 				{isLoading ? <Spiner /> : <Table Data={Data} />}
 			</div>
 		</div>

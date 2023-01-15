@@ -1,27 +1,19 @@
 import { useState } from "react";
 
-const originalState = {
-	Select1: "",
-};
+export function Filter({ setFilterData, filterData }) {
+	const [input, setInput] = useState("");
 
-export function Filter() {
-	const [filterData, setFilterData] = useState(originalState);
-
-	const setDataInfo = () => {
-		console.log(filterData);
-		setFilterData(originalState);
+	const setDataFilter = () => {
+		setFilterData(input);
 	};
 
 	const deleteDataInfo = () => {
-		setFilterData(originalState);
+		setFilterData("");
+		setInput("");
 	};
 
 	function handleChange(e) {
-		e.target.id === "select1" &&
-			setFilterData({
-				...filterData,
-				Select1: e.target.value,
-			});
+		setInput(e.target.value);
 	}
 
 	return (
@@ -39,11 +31,11 @@ export function Filter() {
 				className="form-control"
 				placeholder="Username"
 				aria-label="Username"
-				value={filterData.Select1}
+				value={input}
 				onChange={handleChange}
 			/>
 
-			<button className="btn btn-primary" type="button" onClick={setDataInfo}>
+			<button className="btn btn-primary" type="button" onClick={setDataFilter}>
 				Find
 			</button>
 		</div>

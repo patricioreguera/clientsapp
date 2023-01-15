@@ -4,7 +4,7 @@ export const Client = ({ user }) => {
 	return (
 		<>
 			<tr className="text-start">
-				<th className="text-center" scope="row">
+				<th className="text-center " scope="row">
 					{user.id}
 				</th>
 				<td>{user.fullName}</td>
@@ -12,7 +12,7 @@ export const Client = ({ user }) => {
 				<td>{user.phone}</td>
 				<td>{user.age} years old</td>
 				<td>
-					<button type="button" className="btn btn-primary">
+					<button type="button" className="btn btn-outline-secondary">
 						Detail
 					</button>
 				</td>

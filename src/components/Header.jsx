@@ -3,7 +3,7 @@ export function Header() {
 		<nav className="navbar bg-secondary-subtle shadow-sm" data-bs-theme="dark">
 			<div className="container-fluid">
 				<a className="navbar-brand" href="#">
-					ClientsTabs
+					Banco Internacional
 				</a>
 			</div>
 		</nav>
